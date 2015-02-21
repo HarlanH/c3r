@@ -1,8 +1,20 @@
 Package: c3r
-Title: What the package does (one line)
+Type: Package
+Title: An htmlwidgets interface to the c3.js d3 charting library
 Version: 0.1
-Authors@R: "First Last <first.last@example.com> [aut, cre]"
-Description: What the package does (one paragraph)
-Depends: R (>= 3.1.2)
-License: What license is it under?
-LazyData: true
+Date: 2015-02-21
+Author: Harlan Harris (@harlanh)
+Maintainer: Harlan Harris <harlan@harris.name>
+Description: c3.js is a D3-based charting libary and this package
+    provides an htmlwidgets interface to it.
+URL: http://github.com/harlanh/c3r
+BugReports: https://github.com/harlanh/c3r/issues
+License: MIT + file LICENSE
+Suggests:
+    testthat
+Depends:
+    R (>= 3.0.0),
+    htmlwidgets,
+    htmltools
+Imports:
+    magrittr

@@ -1,7 +1,11 @@
-# (uncomment to add a dependency)
-# dependencies:
-#  - name:
-#    version:
-#    src:
-#    script:
-#    stylesheet:
+dependencies:
+- name: c3
+  version: 0.4.9
+  src: htmlwidgets/lib/c3-0.4.9
+  script: c3.min.js
+  stylesheet: c3.min.css
+- name: d3
+  version: 3.5.0
+  src: htmlwidgets/lib/d3-3.5.0
+  script: d3.min.js
+

@@ -5,17 +5,24 @@
 #' @import htmlwidgets
 #'
 #' @export
-c3r <- function(message, width = NULL, height = NULL) {
+c3_plot <- function(data, x, y, width = NULL, height = NULL) {
+
+  eid <- sprintf("c3r-%s",
+                 paste(sample(c(letters[1:6], 0:9), 30, replace=TRUE), collapse=""))
 
   # forward options using x
-  x = list(
-    message = message
+  params = list(
+    data = data,
+    x=x, # as.character(substitute(x))?
+    y=y
+    #target=sprintf("#%s", eid)
   )
+
 
   # create widget
   htmlwidgets::createWidget(
     name = 'c3r',
-    x,
+    x = params,
     width = width,
     height = height,
     package = 'c3r'
